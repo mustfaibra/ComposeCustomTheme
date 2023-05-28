@@ -5,7 +5,8 @@ import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.graphics.Color
 
 val Purple = Color(0xFF673AB7)
-val SomeColor = Color(0xFF591165)
+val DarkPurple = Color(0xFF150A28)
+val HoneyFlower = Color(0xFF591165)
 val Black = Color(0xFF1D1D1D)
 val White = Color(0xFFF4F4F4)
 
@@ -23,8 +24,14 @@ val LightColorScheme = NewsColors(
 )
 
 val DarkColorScheme = NewsColors(
-    primary = SomeColor,
+    primary = HoneyFlower,
     background = Black,
+    onBackground = White,
+)
+
+val SpaceColorScheme = NewsColors(
+    primary = Purple,
+    background = DarkPurple,
     onBackground = White,
 )
 
